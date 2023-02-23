@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <!-- tailwind css file is here -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/171eaca259.js" crossorigin="anonymous"></script>
+
+   <style>
+    .hd{
+       padding: 1rem;
+    }
+
+    #textarea{
+           min-width: 50rem;
+           height: 25rem;
+           overflow: hidden;
+           resize: none;
+           outline: none;
+           border: none;
+           border-radius: .5rem;
+    }
+   </style>
+  </head>
+  <body>
+    
+    <header class="bg-green-300 hd w-3/4 mx-auto">
+        <h1 class="text-center text-5xl p-4 mt-8">My Text Editor</h1>
+        <div class="bg-yellow-200">
+            <!-- parent of three child divission -->
+            <div class="grid grid-cols-3 justify-between">
+                <!-- left div -->
+            <div>
+                <button class="bold"><i class="fa-solid fa-bold p-4 cursor-pointer" id="bold"></i></button>
+                <button class="italic"><i class="fa-solid fa-italic p-4 cursor-pointer" id="italic"></i></button>
+                <button class="underline"><i class="fa-solid fa-underline p-4 cursor-pointer" id="underline"></i></button>
+                
+            </div>
+            <!-- middle div -->
+            <div class="text-center">
+                <button class="left"><i class="fa-solid fa-align-left p-4 cursor-pointer" id="left"></i></button>
+                <button class="center"><i class="fa-solid fa-align-center p-4 cursor-pointer" id="center"></i></button>
+                <button class="right"><i class="fa-solid fa-align-right p-4 cursor-pointer" id="right"></i></button>
+                <button class="justify"><i class="fa-solid fa-align-justify p-4 cursor-pointer" id="justify"></i></button>
+            </div>
+            <!-- right div -->
+            <div class="text-end">
+                <input type="number" name="" id="size" class=" w-10 cursor-pointer align-middle" >
+                <i class="fa-solid fa-font p-4 cursor-pointer" id="normal"></i>
+                <input type="color" name="" id="color" class="cursor-pointer mx-4 align-middle">
+
+            </div>
+            </div>
+
+        </div>
+        <hr>
+        <section class="text-center align-middle w-11/12 mx-auto">
+            <textarea  id="textarea" w-full  class=" my-2"></textarea>
+        </section>
+    </header>
+
+  
+
+    <!-- js file is here -->
+    <script src="texteditor.js"></script>
+  </body>
+</html>
+<!-- lorem500 -->
+<!-- lorem500  --
